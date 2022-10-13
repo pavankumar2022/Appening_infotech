@@ -87,6 +87,10 @@ class userController {
       res.send({ status: "failed", message: "Unable to Login" });
     }
   };
+  
+  static loggedUser = async (req, res) => {
+    res.send({ "user": req.user })
+  }
 
 }
 
